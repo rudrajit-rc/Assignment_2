@@ -16,6 +16,8 @@ The dataset exceeds the assignment minimum of 12 features and 500 instances. It 
 
 **GitHub repository:** [Rudrajit/Assignment_2__Classification](https://github.com/Rudrajit/Assignment_2__Classification) (public)
 
+**Live Streamlit app:** [Cell Pattern Classifier Lab](https://assignment2classification-5vzldm4u3enyghzey4edgw.streamlit.app/)
+
 ## d. Models used
 
 All five classifiers are trained with the same 455 training records and evaluated on the same 114 held-out records. Standard scaling is included inside the Logistic Regression, KNN, and SVM pipelines so the fitted preprocessing is saved with each estimator. The Decision Tree and Gaussian Naive Bayes use their native feature handling. The model settings and random seed are documented in `train_models.py`. Malignant (`M`) is treated as the positive class.
