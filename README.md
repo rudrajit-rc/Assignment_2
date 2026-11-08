@@ -14,9 +14,9 @@ The dataset exceeds the assignment minimum of 12 features and 500 instances. It 
 
 ## c. GitHub Repository Link
 
-**GitHub repository:** [Rudrajit/Assignment_2__Classification](https://github.com/Rudrajit/Assignment_2__Classification) (public)
+**GitHub repository:** [Rudrajit/Assignment_2__Classification](https://github.com/rudrajit-rc/Assignment_2/) (public)
 
-**Live Streamlit app:** [Cell Pattern Classifier Lab](https://assignment2classification-5vzldm4u3enyghzey4edgw.streamlit.app/)
+**Live Streamlit app:** [Cell Pattern Classifier Lab](https://assignment2-7l2jdcfyxpxmw8zfuu8cng.streamlit.app/)
 
 If the app appears inactive after opening the link, follow the activation instructions shown in the browser, then reload the page.
 
