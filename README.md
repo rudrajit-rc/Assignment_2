@@ -18,6 +18,30 @@ The dataset exceeds the assignment minimum of 12 features and 500 instances. It 
 
 **Live Streamlit app:** [Cell Pattern Classifier Lab](https://assignment2classification-5vzldm4u3enyghzey4edgw.streamlit.app/)
 
+If the app appears inactive after opening the link, follow the activation instructions shown in the browser, then reload the page.
+
+## Project structure
+
+```text
+project-folder/
+├── app.py                         # Streamlit interface for uploading test data and reviewing model results
+├── model_utils.py                 # Shared feature schema, CSV validation, and evaluation helpers
+├── train_models.py                # Trains the five classifiers and saves models and evaluation results
+├── requirements.txt                # Python dependencies required to run the project
+├── train_data.csv                  # Fixed training split used to fit the classifiers
+├── test_data.csv                   # Labeled test split used for evaluation and app uploads
+├── results.csv                     # Evaluation metrics for all five classifiers
+├── data/
+│   └── breast_cancer_wdbc.csv       # Original UCI dataset with sample identifiers
+└── model/
+    ├── decision_tree.joblib         # Saved Decision Tree classifier
+    ├── gaussian_nb.joblib           # Saved Gaussian Naive Bayes classifier
+    ├── knn.joblib                   # Saved K-Nearest Neighbors pipeline
+    ├── logistic_regression.joblib   # Saved Logistic Regression pipeline
+    ├── support_vector_machine.joblib # Saved Support Vector Machine pipeline
+    └── model_config.json            # Model names and artifact configuration
+```
+
 ## d. Models used
 
 All five classifiers are trained with the same 455 training records and evaluated on the same 114 held-out records. Standard scaling is included inside the Logistic Regression, KNN, and SVM pipelines so the fitted preprocessing is saved with each estimator. The Decision Tree and Gaussian Naive Bayes use their native feature handling. The model settings and random seed are documented in `train_models.py`. Malignant (`M`) is treated as the positive class.
